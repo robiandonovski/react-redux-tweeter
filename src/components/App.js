@@ -18,7 +18,7 @@ class App extends Component {
         <Fragment>
           <LoadingBar />
           <div className='container'>
-          <Nav />
+            <Nav />
             {this.props.loading === true
               ? null
               : <div>
@@ -26,7 +26,6 @@ class App extends Component {
                 <Route path='/tweet/:id' component={TweetPage} />
                 <Route path='/new' component={NewTweet} />
               </div>
-              // <TweetPage match={{params: {id: '26p5pskqi88i58qmza2gid'}}} />
             }
           </div>
         </Fragment>
